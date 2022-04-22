@@ -21,6 +21,7 @@ syntax on
 set t_Co=256
 set termguicolors
 
+
 call plug#begin()
   Plug 'vim-airline/vim-airline'
 "	Plug 'ryanoasis/vim-devicons'
@@ -29,7 +30,7 @@ call plug#begin()
 	Plug 'sheerun/vim-polyglot'
 	Plug 'jiangmiao/auto-pairs'
 	Plug 'ap/vim-css-color'
-"	Plug 'preservim/nerdtree'
+"	Plug 
 " requires
   Plug 'kyazdani42/nvim-web-devicons' " for file icons
   Plug 'kyazdani42/nvim-tree.lua'
@@ -39,7 +40,6 @@ call plug#begin()
 	Plug 'plasticboy/vim-markdown'
 
 	" Git
-	Plug 'airblade/vim-gitgutter'
 
 	" ColorSceme
 	Plug 'morhetz/gruvbox'
@@ -51,8 +51,8 @@ call plug#begin()
 	Plug 'glepnir/dashboard-nvim'
 	call plug#end()
 	
+    
 autocmd VimEnter * hi Normal ctermbg=none
-
 let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
 

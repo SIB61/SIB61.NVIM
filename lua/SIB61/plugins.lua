@@ -1,5 +1,4 @@
 vim.cmd [[packadd packer.nvim]]
-
 require('packer').startup(function()
         use {   
                 'wbthomason/packer.nvim',
@@ -21,14 +20,17 @@ require('packer').startup(function()
                 'jose-elias-alvarez/null-ls.nvim',
                 'akinsho/toggleterm.nvim',
                 'goolord/alpha-nvim',
+                'lewis6991/gitsigns.nvim'
         }
 end)
 require('lualine').setup()
 require('telescope').setup()
 require('nvim-tree').setup()
 require('nvim-autopairs').setup()
+require('gitsigns').setup()
 require('toggleterm').setup{}
 require('alpha').setup(require('alpha.themes.startify').config)
+
 local null_ls=require('null-ls')
 null_ls.setup{
 sources = {

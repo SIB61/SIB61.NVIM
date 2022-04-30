@@ -15,5 +15,9 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 ```
 
 ```code
+nvim +PackerSync
+```
+
+```code
 git clone https://github.com/SIB61/SIB61-VIM ~/.config/nvim
 ```

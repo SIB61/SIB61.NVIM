@@ -1,21 +1,30 @@
-vim.o.background="dark"
-vim.o.clipboard='unnamedplus'
-vim.wo.cursorline=true
-vim.o.hidden=true
-vim.o.mouse='a'
-vim.wo.number=true
-vim.o.wildmenu=true
-vim.bo.expandtab=true
-vim.bo.t_Co="256"
-vim.bo.syntax="on"
-vim.o.completeopt="noinsert,menuone,noselect"
-vim.o.termguicolors=true
---vim.bo.filetype='plugin,indent,on'
-vim.bo.shiftwidth=4
-vim.bo.tabstop=4
-vim.cmd([[filetype plugin indent on]])
-vim.wo.wrap=false
-vim.o.so=5
-vim.o.siso=4
-
-
+local v = vim.opt
+v.background = "dark"
+v.clipboard = "unnamedplus"
+v.cursorline = true
+v.hidden = true
+v.mouse = "a"
+v.number = true
+v.wildmenu = true
+v.syntax = "on"
+v.completeopt = "noinsert,menuone,noselect"
+v.termguicolors = true
+v.shiftwidth = 2
+v.tabstop = 2
+v.expandtab = true
+v.wrap = false
+v.so = 5
+v.siso = 4
+v.filetype = "on"
+--v.filetype = "indent,on"
+--v.smartindent = true
+v.splitbelow = true
+v.splitright = true
+v.list = false
+v.listchars = { tab = "▸ ", trail = "·" }
+v.relativenumber = true
+vim.g.mapleader = ";"
+v.laststatus = 3
+vim.o.laststatus = 3
+v.foldmethod = "expr"
+v.foldexpr = "nvim_treesitter#foldexpr()"

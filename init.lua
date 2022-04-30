@@ -8,6 +8,7 @@ local sources = {
 	"SIB61.null-ls-conf",
 	"SIB61.nvim-tree-conf",
 	"SIB61.treesitter-conf",
+	"SIB61.alpha-conf",
 }
 
 for _, source in ipairs(sources) do

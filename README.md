@@ -21,3 +21,24 @@ nvim +PackerSync
 ```code
 git clone https://github.com/SIB61/SIB61-VIM ~/.config/nvim
 ```
+
+### Features
+
+1.  Dashboard
+2.  File explorer
+3.  Terminal
+4.  Telescope
+5.  code autocompletion
+6.  code highlight
+7.  code format
+
+### Keybindings
+
+1.  code format - ctrl+f
+2.  file explorer toggle - semicolon+e
+3.  file explorer focus - semicolon+w
+4.  find file -semicolon+f
+5.  find word -semicolon+a
+6.  toggle terminal -semicolon+t
+7.  close fold - semicolon+c
+8.  open fold - semicolon+o

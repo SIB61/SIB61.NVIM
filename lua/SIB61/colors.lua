@@ -1,6 +1,7 @@
-vim.cmd("colorscheme nightfox")
-require('nightfox').setup({
-    options = {
-	    transparent = true 
-    }
+require("nightfox").setup({
+	options = {
+		transparent = true,
+	},
 })
+
+vim.cmd("colorscheme nightfox")

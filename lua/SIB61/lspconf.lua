@@ -36,7 +36,7 @@ local on_attach = function(client, bufnr)
 end
 local conf = require("lspconfig")
 local lsps = {
-	"clangd",
+	"ccls",
 	"tsserver",
 	"pyright",
 	"html",
@@ -48,10 +48,9 @@ local lsps = {
 	--	"denols",
 }
 for _, lsp in ipairs(lsps) do
-
-        if lsp=="emmet_ls" then
-            capabilities.textDocument.completion.completionItem.snippetSupport = true
-        end
+	if lsp == "emmet_ls" then
+		capabilities.textDocument.completion.completionItem.snippetSupport = true
+	end
 	conf[lsp].setup({
 		capabilities = capabilities,
 		on_attach = on_attach,

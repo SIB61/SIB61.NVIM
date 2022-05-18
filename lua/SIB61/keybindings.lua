@@ -4,7 +4,7 @@ local normal = "n"
 local terminal = "t"
 --local insert = "i"
 keymap(normal, "<leader>e", ":NvimTreeToggle<cr>", opts)
-keymap(normal, "<leader>b", ":Telescope buffers", opts)
+keymap(normal, "<leader>b", ":Telescope buffers<cr>", opts)
 keymap(normal, "<C-s>", ":<C-u>SessionSave<cr>", opts)
 keymap(normal, "<C-l>", ":<C-u>SessionLoad<cr>", opts)
 keymap(normal, "<leader>f", ":Telescope find_files<cr>", opts)

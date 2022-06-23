@@ -1,5 +1,4 @@
 local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
-
 local opts = { noremap = true, silent = true }
 vim.api.nvim_set_keymap("n", "<space>e", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
 vim.api.nvim_set_keymap("n", "[d", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts)
@@ -45,7 +44,6 @@ local lsps = {
 	"csharp_ls",
 	"emmet_ls",
 	"tailwindcss",
-	--	"denols",
 }
 for _, lsp in ipairs(lsps) do
 	if lsp == "emmet_ls" then

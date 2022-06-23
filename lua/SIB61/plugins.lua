@@ -28,6 +28,7 @@ require("packer").startup(function()
 			"nvim-treesitter/nvim-treesitter",
 			run = ":TSUpdate",
 		},
+		"folke/lsp-colors.nvim",
 	})
 end)
 require("Comment").setup()

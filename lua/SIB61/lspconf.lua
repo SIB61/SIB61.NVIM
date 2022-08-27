@@ -35,7 +35,8 @@ local on_attach = function(client, bufnr)
 end
 local conf = require("lspconfig")
 local lsps = {
-	"ccls",
+	"clangd",
+	"gopls",
 	"tsserver",
 	"pyright",
 	"html",
@@ -44,6 +45,8 @@ local lsps = {
 	"csharp_ls",
 	"emmet_ls",
 	"tailwindcss",
+	"svelte",
+	"astro",
 }
 for _, lsp in ipairs(lsps) do
 	if lsp == "emmet_ls" then

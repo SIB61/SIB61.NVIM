@@ -1,7 +1,8 @@
-require("nightfox").setup({
-	options = {
-		transparent = true,
-	},
+--require("nightfox").setup({options = {},})
+-- Lua
+require("onedark").setup({
+	style = "deep",
 })
-
-vim.cmd("colorscheme nightfox")
+require("onedark").load()
+--require("gruvbox").setup()
+vim.cmd("colorscheme onedark")

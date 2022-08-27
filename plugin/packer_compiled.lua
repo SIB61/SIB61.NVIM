@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/sabit/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  gruvbox = {
+    loaded = true,
+    path = "/home/sabit/.local/share/nvim/site/pack/packer/start/gruvbox",
+    url = "https://github.com/morhetz/gruvbox"
+  },
   ["lsp-colors.nvim"] = {
     loaded = true,
     path = "/home/sabit/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim",
@@ -163,6 +168,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sabit/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
+  ["onedark.nvim"] = {
+    loaded = true,
+    path = "/home/sabit/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,

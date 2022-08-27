@@ -24,6 +24,8 @@ require("packer").startup(function()
 		"quangnguyen30192/cmp-nvim-ultisnips", --snippets engine
 		"honza/vim-snippets", --snippets
 		"williamboman/nvim-lsp-installer", --lsp installer
+		"navarasu/onedark.nvim",
+		"morhetz/gruvbox",
 		{
 			"nvim-treesitter/nvim-treesitter",
 			run = ":TSUpdate",

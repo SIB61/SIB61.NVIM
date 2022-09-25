@@ -36,17 +36,16 @@ end
 local conf = require("lspconfig")
 local lsps = {
 	"clangd",
-	"gopls",
 	"tsserver",
 	"pyright",
 	"html",
 	"angularls",
 	"cssls",
-	"csharp_ls",
+  "omnisharp",
 	"emmet_ls",
 	"tailwindcss",
+  "eslint",
 	"svelte",
-	"astro",
 }
 for _, lsp in ipairs(lsps) do
 	if lsp == "emmet_ls" then

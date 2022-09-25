@@ -2,9 +2,9 @@ local cmp = require("cmp")
 cmp.setup({
 	snippet = {
 		expand = function(args)
-			-- require("luasnip.loaders.from_vscode").lazy_load()
-			--require('luasnip').lsp_expand(args.body)
-			vim.fn["UltiSnips#Anon"](args.body)
+			require("luasnip.loaders.from_vscode").lazy_load()
+			require('luasnip').lsp_expand(args.body)
+			-- vim.fn["UltiSnips#Anon"](args.body)
 		end,
 	},
 	mapping = cmp.mapping.preset.insert({

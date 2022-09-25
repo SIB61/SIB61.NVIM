@@ -24,7 +24,8 @@ require("packer").startup(function()
 		"quangnguyen30192/cmp-nvim-ultisnips", --snippets engine
 		"honza/vim-snippets", --snippets
 		"williamboman/nvim-lsp-installer", --lsp installer
-		"navarasu/onedark.nvim",
+   	"L3MON4D3/LuaSnip",
+   "navarasu/onedark.nvim",
 		"morhetz/gruvbox",
 		{
 			"nvim-treesitter/nvim-treesitter",

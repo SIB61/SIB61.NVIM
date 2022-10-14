@@ -16,11 +16,10 @@ cmp.setup({
 	}),
 	sources = cmp.config.sources({
 		{ name = "nvim_lsp" },
-		--    {name = 'luasnip'},
-		{ name = "ultisnips" },
-	}, {
+		{name = 'luasnip'},
 		{ name = "buffer" },
-	}),
+   {name = 'cmp_tabnine'}	 
+  }),
 })
 
 cmp.setup.filetype("gitcommit", {

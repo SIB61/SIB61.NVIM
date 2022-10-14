@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/sabit/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
+  ["barbar.nvim"] = {
+    loaded = true,
+    path = "/home/sabit/.local/share/nvim/site/pack/packer/start/barbar.nvim",
+    url = "https://github.com/romgrk/barbar.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/sabit/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -104,25 +109,25 @@ _G.packer_plugins = {
     path = "/home/sabit/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["cmp-nvim-ultisnips"] = {
-    loaded = true,
-    path = "/home/sabit/.local/share/nvim/site/pack/packer/start/cmp-nvim-ultisnips",
-    url = "https://github.com/quangnguyen30192/cmp-nvim-ultisnips"
-  },
   ["cmp-path"] = {
     loaded = true,
     path = "/home/sabit/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["cmp-tabnine"] = {
+    loaded = true,
+    path = "/home/sabit/.local/share/nvim/site/pack/packer/start/cmp-tabnine",
+    url = "https://github.com/tzachar/cmp-tabnine"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/home/sabit/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/sabit/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
-  },
-  gruvbox = {
-    loaded = true,
-    path = "/home/sabit/.local/share/nvim/site/pack/packer/start/gruvbox",
-    url = "https://github.com/morhetz/gruvbox"
   },
   ["lsp-colors.nvim"] = {
     loaded = true,
@@ -203,16 +208,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sabit/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
-  },
-  ultisnips = {
-    loaded = true,
-    path = "/home/sabit/.local/share/nvim/site/pack/packer/start/ultisnips",
-    url = "https://github.com/SirVer/ultisnips"
-  },
-  ["vim-snippets"] = {
-    loaded = true,
-    path = "/home/sabit/.local/share/nvim/site/pack/packer/start/vim-snippets",
-    url = "https://github.com/honza/vim-snippets"
   }
 }
 

@@ -35,12 +35,19 @@ nvim +PackerSync
 7.  code format
 
 ### Keybindings
-
+leader = semicolon
 1.  code format - ctrl+f
-2.  file explorer toggle - semicolon+e
-3.  file explorer focus - semicolon+w
-4.  find file -semicolon+f
-5.  find word -semicolon+a
-6.  toggle terminal -semicolon+t
-7.  close fold - semicolon+c
-8.  open fold - semicolon+o
+2.  file explorer toggle - leader+e
+3.  file explorer focus - leader+w
+4.  find file - leader+f
+5.  find word - leader+a
+6.  toggle terminal - leader+t
+7.  close fold - leader+c
+8.  open fold - leader+o
+9.  open file from file explorer - o 
+10. open file in a vertical spilt from file exporer - V 
+11. open file in a horizontal split from file explorer - H
+11. go to left split - leader+h 
+12. go to bottom split - leader+j 
+13. go to above split - leader+k
+14. go to right split - leader+l

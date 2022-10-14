@@ -1,112 +1,106 @@
-require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
-	auto_reload_on_write = true,
-	disable_netrw = false,
-	hijack_cursor = false,
-	hijack_netrw = true,
-	hijack_unnamed_buffer_when_opening = false,
-	ignore_buffer_on_setup = false,
-	open_on_setup = false,
-	open_on_setup_file = false,
-	open_on_tab = false,
-	sort_by = "name",
-	update_cwd = false,
-	view = {
-		width = 30,
-		height = 30,
-		hide_root_folder = true,
-		side = "left",
-		preserve_window_proportions = false,
-		number = false,
-		relativenumber = false,
-		signcolumn = "yes",
-		mappings = {
-			custom_only = false,
-			list = {
-				-- user mappings go here
-			},
-		},
-	},
-	renderer = {
-		indent_markers = {
-			enable = false,
-			icons = {
-				corner = "└ ",
-				edge = "│ ",
-				none = "  ",
-			},
-		},
-		icons = {
-			webdev_colors = true,
-		},
-	},
-	hijack_directories = {
-		enable = true,
-		auto_open = true,
-	},
-	update_focused_file = {
-		enable = false,
-		update_cwd = false,
-		ignore_list = {},
-	},
-	ignore_ft_on_setup = {},
-	system_open = {
-		cmd = nil,
-		args = {},
-	},
-	diagnostics = {
-		enable = false,
-		show_on_dirs = false,
-		icons = {
-			hint = "",
-			info = "",
-			warning = "",
-			error = "",
-		},
-	},
-	filters = {
-		dotfiles = false,
-		custom = {},
-		exclude = {},
-	},
-	git = {
-		enable = true,
-		ignore = true,
-		timeout = 400,
-	},
-	actions = {
-		use_system_clipboard = true,
-		change_dir = {
-			enable = true,
-			global = false,
-			restrict_above_cwd = false,
-		},
-		open_file = {
-			quit_on_open = false,
-			resize_window = false,
-			window_picker = {
-				enable = true,
-				chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
-				exclude = {
-					filetype = { "notify", "packer", "qf", "diff", "fugitive", "fugitiveblame" },
-					buftype = { "nofile", "terminal", "help" },
-				},
-			},
-		},
-	},
-	trash = {
-		cmd = "trash",
-		require_confirm = true,
-	},
-	log = {
-		enable = false,
-		truncate = false,
-		types = {
-			all = false,
-			config = false,
-			copy_paste = false,
-			diagnostics = false,
-			git = false,
-			profile = false,
-		},
-	},
-}) -- END_DEFAULT_OPTS
+  local tree = require("nvim-tree")
+
+  tree.setup({
+    create_in_closed_folder = true,
+    hijack_cursor = true,
+    open_on_setup = true,
+    open_on_setup_file = true,
+    focus_empty_on_setup = true,
+    sync_root_with_cwd = true,
+    view = {
+      adaptive_size = false,
+      hide_root_folder = true,
+      mappings = {
+       list = {
+          { key = { "<2-RightMouse>", "<C-]>" }, action = "" }, -- cd
+          { key = "V", action = "vsplit" }, -- vsplit
+          { key = "H", action = "split" }, -- split
+          { key = "<C-t>", action = "" }, -- tabnew
+          { key = "<BS>", action = "" }, -- close_node
+          { key = "<Tab>", action = "preview" }, -- preview
+          { key = "D", action = "" }, -- trash
+          { key = "[e", action = "" }, -- prev_diag_item
+          { key = "]e", action = "" }, -- next_diag_item
+          { key = "[c", action = "" }, -- prev_git_item
+          { key = "]c", action = "" }, -- next_git_item
+          { key = "-", action = "" }, -- dir_up
+          { key = "s", action = "" }, -- system_open
+          { key = "W", action = "" }, -- collapse_all
+          { key = "g?", action = "" }, -- toggle_help
+
+          { key = "d", action = "cd" }, -- remove
+          { key = "x", action = "remove" }, -- cut
+
+          { key = "t", action = "cut" },
+          { key = "<Space>p", action = "prev_diag_item" },
+          { key = "<Space>.", action = "next_diag_item" },
+          { key = "<Space>k", action = "prev_git_item" },
+          { key = "<Space>j", action = "next_git_item" },
+          { key = "u", action = "dir_up" },
+          { key = "'", action = "close_node" },
+          { key = '"', action = "collapse_all" },
+          { key = "?", action = "toggle_help" },
+        },
+      },
+    },
+    renderer = {
+      full_name = true,
+      group_empty = true,
+      special_files = {},
+      symlink_destination = false,
+      indent_markers = {
+        enable = true,
+      },
+      icons = {
+        git_placement = "signcolumn",
+        show = {
+          file = true,
+          folder = true,
+          folder_arrow = false,
+          git = true,
+        },
+      },
+    },
+    update_focused_file = {
+      enable = true,
+      update_root = true,
+      ignore_list = { "help" },
+    },
+    diagnostics = {
+      enable = true,
+      show_on_dirs = true,
+    },
+    filters = {
+      custom = {
+        "^.git$",
+      },
+    },
+    actions = {
+      change_dir = {
+        enable = false,
+        restrict_above_cwd = true,
+      },
+      open_file = {
+        resize_window = true,
+        window_picker = {
+          chars = "abcdefghijklmnopqrstuvwxyz",
+        },
+      },
+      remove_file = {
+        close_window = false,
+      },
+    },
+    log = {
+      enable = false,
+      truncate = true,
+      types = {
+        all = false,
+        config = false,
+        copy_paste = false,
+        diagnostics = false,
+        git = false,
+        profile = false,
+        watcher = false,
+      },
+    },
+  })

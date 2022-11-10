@@ -4,8 +4,7 @@
     create_in_closed_folder = true,
     hijack_cursor = true,
     open_on_setup = false,
-    open_on_setup_file = true,
-    focus_empty_on_setup = true,
+    open_on_setup_file = false,
     sync_root_with_cwd = true,
     view = {
       adaptive_size = false,

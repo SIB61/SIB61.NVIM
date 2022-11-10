@@ -1,6 +1,7 @@
 vim.cmd([[packadd packer.nvim]])
 require("packer").startup(function()
 	use({
+    "windwp/nvim-ts-autotag",
 		"wbthomason/packer.nvim", --plugin manager
 		"nvim-lualine/lualine.nvim", --status bar
     "simrat39/rust-tools.nvim",
@@ -41,6 +42,7 @@ require("telescope").setup({})
 require("nvim-autopairs").setup()
 require("gitsigns").setup()
 require("toggleterm").setup({})
+require('nvim-ts-autotag').setup()
 -- require("bufferline").setup{}
 --require("luasnip.loaders.from_vscode").lazy_load()
 -- require("cmp_nvim_ultisnips").setup({})

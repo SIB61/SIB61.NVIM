@@ -3,8 +3,12 @@ require("packer").startup(function()
 	use({
 		"wbthomason/packer.nvim", --plugin manager
 		"nvim-lualine/lualine.nvim", --status bar
+    "simrat39/rust-tools.nvim",
 		"kyazdani42/nvim-web-devicons", --icons
 		"neovim/nvim-lspconfig", --lsp config
+    "williamboman/mason-lspconfig.nvim",
+    "williamboman/mason.nvim",
+    "neovim/nvim-lspconfig",
 		"nvim-telescope/telescope.nvim", --finder
 		"kyazdani42/nvim-tree.lua", --Tree
 		"nvim-lua/plenary.nvim",
@@ -20,24 +24,15 @@ require("packer").startup(function()
 		"goolord/alpha-nvim", --dashboard
 		"lewis6991/gitsigns.nvim", --git
 		"numToStr/Comment.nvim", --comment
-		-- "SirVer/ultisnips", --snippets
-		-- "quangnguyen30192/cmp-nvim-ultisnips", --snippets engine
-		-- "honza/vim-snippets", --snippets
-		"williamboman/nvim-lsp-installer", --lsp installer
    	"L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip",
     "navarasu/onedark.nvim",
-		-- "morhetz/gruvbox",
 		{
 			"nvim-treesitter/nvim-treesitter",
 			run = ":TSUpdate",
 		},
 	{"tzachar/cmp-tabnine", run='./install.sh', requires = 'hrsh7th/nvim-cmp'},
- -- "folke/tokyonight.nvim",
  "folke/lsp-colors.nvim",
- -- "ellisonleao/gruvbox.nvim"
--- {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
--- {'romgrk/barbar.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 	})
 end)
 require("Comment").setup()
@@ -49,7 +44,7 @@ require("toggleterm").setup({})
 -- require("bufferline").setup{}
 --require("luasnip.loaders.from_vscode").lazy_load()
 -- require("cmp_nvim_ultisnips").setup({})
-require("nvim-lsp-installer").setup({})
+-- require("nvim-lsp-installer").setup({})
 local tabnine = require('cmp_tabnine.config')
 tabnine.setup({
 	max_lines = 1000,

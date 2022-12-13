@@ -18,5 +18,5 @@ keymap(terminal, "<leader>t", [[<C-\><C-n>:ToggleTerm<cr>]], opts)
 keymap(normal, "<leader>w", ":NvimTreeFocus<cr>", opts)
 keymap(normal, "<leader>o", ":foldopen<cr>", opts)
 keymap(normal, "<leader>c", ":foldclose<cr>", opts)
---keymap(insert, "<C-f>", ":lua vim.lsp.buf.formatting_sync()<cr>", opts)
+keymap(normal, "<C-f>", ":lua vim.lsp.buf.format()<cr>", opts)
 --keymap(normal,'','',opts):

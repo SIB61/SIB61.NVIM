@@ -32,7 +32,7 @@ require("packer").startup(function()
 			"nvim-treesitter/nvim-treesitter",
 			run = ":TSUpdate",
 		},
-	{"tzachar/cmp-tabnine", run='./install.sh', requires = 'hrsh7th/nvim-cmp'},
+	-- {"tzachar/cmp-tabnine", run='./install.sh', requires = 'hrsh7th/nvim-cmp'},
  "folke/lsp-colors.nvim",
 	})
 end)
@@ -47,17 +47,17 @@ require('nvim-ts-autotag').setup()
 --require("luasnip.loaders.from_vscode").lazy_load()
 -- require("cmp_nvim_ultisnips").setup({})
 -- require("nvim-lsp-installer").setup({})
-local tabnine = require('cmp_tabnine.config')
-tabnine.setup({
-	max_lines = 1000,
-	max_num_results = 20,
-	sort = true,
-	run_on_every_keystroke = true,
-	snippet_placeholder = '..',
-	ignored_file_types = { 
-		-- default is not to ignore
-		-- uncomment to ignore in lua:
-		-- lua = true
-	},
-	show_prediction_strength = false
-})
+-- local tabnine = require('cmp_tabnine.config')
+-- tabnine.setup({
+-- 	max_lines = 1000,
+-- 	max_num_results = 20,
+-- 	sort = true,
+-- 	run_on_every_keystroke = true,
+-- 	snippet_placeholder = '..',
+-- 	ignored_file_types = { 
+-- 		-- default is not to ignore
+-- 		-- uncomment to ignore in lua:
+-- 		-- lua = true
+-- 	},
+-- 	show_prediction_strength = false
+-- })

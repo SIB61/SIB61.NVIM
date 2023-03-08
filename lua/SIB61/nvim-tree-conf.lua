@@ -1,7 +1,6 @@
   local tree = require("nvim-tree")
 
   tree.setup({
-    create_in_closed_folder = true,
     hijack_cursor = true,
     open_on_setup = false,
     open_on_setup_file = false,

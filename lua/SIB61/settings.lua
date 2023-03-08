@@ -27,5 +27,5 @@ v.relativenumber = true
 vim.g.mapleader = ";"
 v.laststatus = 3
 vim.o.laststatus = 3
-v.foldmethod = "expr"
-v.foldexpr = "nvim_treesitter#foldexpr()"
+-- v.foldmethod = "expr"
+-- v.foldexpr = "nvim_treesitter#foldexpr()"

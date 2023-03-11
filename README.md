@@ -2,11 +2,12 @@
 This is a neovim lua config written entirely in lua and with all necessary plugin setup for a modern Programming IDE. All the plugins used in this config are also written in lua. 
 Anyone who wants the efficiency on neovim but doesn't want to go through the configuration step can definitely use this configuration for their setup.
 
-![alt dashboard](https://github.com/SIB61/SIB61-VIM/blob/master/imgs/1.png)
-![alt dashboard](https://github.com/SIB61/SIB61-VIM/blob/master/imgs/2.png)
-![alt dashboard](https://github.com/SIB61/SIB61-VIM/blob/master/imgs/3.png)
-![alt dashboard](https://github.com/SIB61/SIB61-VIM/blob/master/imgs/4.png)
-
+![alt dashboard](https://github.com/SIB61/SIB61-VIM/blob/master/imgs/a.png)
+![alt dashboard](https://github.com/SIB61/SIB61-VIM/blob/master/imgs/b.png)
+![alt dashboard](https://github.com/SIB61/SIB61-VIM/blob/master/imgs/c.png)
+![alt dashboard](https://github.com/SIB61/SIB61-VIM/blob/master/imgs/d.png)
+![alt dashboard](https://github.com/SIB61/SIB61-VIM/blob/master/imgs/e.png)
+![alt dashboard](https://github.com/SIB61/SIB61-VIM/blob/master/imgs/f.png)
 ## Installation
 Installation is pretty straight forward
 

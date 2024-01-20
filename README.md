@@ -1,4 +1,4 @@
-# SIB61.NVIM
+# SIB61.NVIM : Neovim to NeoIDE
 This is a neovim lua config written entirely in lua and with all necessary plugin setup for a modern Programming IDE. All the plugins used in this config are also written in lua. 
 Anyone who wants the efficiency on neovim but doesn't want to go through the configuration step can definitely use this configuration for their setup.
 

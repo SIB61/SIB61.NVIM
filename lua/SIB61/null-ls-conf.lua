@@ -6,14 +6,14 @@ null_ls.setup({
 		format.prettier,
 	},
 
-	on_attach = function(client)
-		-- if client.server_capabilities.document_formatting then
-		-- 	vim.cmd([[
-  --           augroup LspFormatting
-  --               autocmd! * <buffer>
-  --               autocmd BufWritePre <buffer> lua vim.lsp.buf.format()
-  --           augroup END
-  --           ]])
-		-- end
-	end,
+	-- on_attach = function(client)
+	-- 	-- if client.server_capabilities.document_formatting then
+	-- 	-- 	vim.cmd([[
+ --  --           augroup LspFormatting
+ --  --               autocmd! * <buffer>
+ --  --               autocmd BufWritePre <buffer> lua vim.lsp.buf.format()
+ --  --           augroup END
+ --  --           ]])
+	-- 	-- end
+	-- end,
 })

@@ -4,7 +4,7 @@
     hijack_cursor = true,
     sync_root_with_cwd = true,
     view = {
-      adaptive_size = false,
+      adaptive_size = true,
       -- mappings = {
       --  list = {
       --     { key = { "<2-RightMouse>", "<C-]>" }, action = "" }, -- cd

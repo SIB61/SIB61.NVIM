@@ -54,3 +54,8 @@ require("nvim-autopairs").setup()
 require("gitsigns").setup()
 require("toggleterm").setup({})
 require('nvim-ts-autotag').setup()
+require('cmp').setup {
+ sources = {
+ 	{ name = 'cmp_tabnine' },
+ },
+}
